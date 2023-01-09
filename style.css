@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Libre Franklin', sans-serif;
+}
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    font-size: 10px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 7rem 4rem;
+    max-width: 900px;
+}
+#slogo span:first-child {
+    font-size: 4rem;
+    font-weight: 100;
+    color: var(--Gray);
+}
+#slogo span {
+    font-size: 4rem;
+    font-weight: 700;
+}
+#slogo p {
+    font-size: 2rem ;
+    text-align: center;
+    margin-top: 1rem;
+}
+#input {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+input {
+    padding: 2rem;
+    border-radius: 99px;
+    width: 185%;
+    border: 1px solid var(--Gray);
+    color: var(--Gray) !important;
+}
+button {
+    padding: 2rem 5%;
+    border-radius: 99px;
+    background-color: var(--Blue);
+    color: white;
+    box-shadow: 0 3px 25% var(--Pale-Blue);
+    width :100%;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #6991fb;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+#pic    {
+    width: 100%;
+}
+.error {
+    border: 1px solid red;
+}
+#error{
+    color: red;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 16px;
+    font-weight: 300;
+    display: none;
+}
+.container {
+    width: 100%;
+}
+.show   {
+    display: block !important;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 2rem;
+    color: var(--Blue);
+}
+.social-media i {
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 0 10px rgba(194, 211, 255, 0.64);
+    border-radius:50% ;
+    cursor: pointer;
+}
+.social-media i:hover {
+    background-color: var(--Blue);
+    color: white;
+}
+@media screen and (max-width: 376px) {
+    #slogo span {
+        font-size:2.5rem !important ;
+    }
+    #slogo p {
+        font-size: 1.5rem;
+    }
+    #input {
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    #notify {
+        padding: 1.5rem;
+        width: 100%;
+    }
+}
